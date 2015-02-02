@@ -1,30 +1,30 @@
 ## CPupdate.js
 
-_An 'in-repo' CLI for updating your projects on ChallengePost._
+_Update your ChallengePost Portfolio with node.js_
 
 ### Uhm wut?
 
 Hi there! My name is Neal Shyam and I'm the Community Manager at ChallengePost. This past weekend, I had the pleasure of attending [Hackcon II](http://hackcon.io) and met a _ton_ of great hackers & hackathon organizers.
 
-I also got to talk to folks about what ChallengePost was doing well / poorly and how we could improve. One piece of feedback resonated with me a lot.  
+I also got to talk to folks about what ChallengePost is doing well, what we're doing poorly, and how we could improve. One particular piece of feedback resonated with me a lot:  
 
 >"It'd be great if I could update my projects on ChallengePost via an API or by pushing to GitHub."
 
-Believe me, I get it. I update my [personal projects](http://challengepost.com/nealrs) pretty often and copying over markdown from my readme feels silly. (Note: your readme probably isn't the best description of your project &mdash; but I'll talk more about that in an upcoming blog post.)
+Believe me, I get it. I update my [personal projects](http://challengepost.com/nealrs)  often and copying over the markdown from my readme feels silly. (Note: your readme really isn't the best description of your project &mdash; but I'll talk more about that in an upcoming blog post.)
 
-Good products should give you a ton of value and get the hell out of your way. Whether you're updating your PennApps hack a week later or releasing a new version of a personal project, you don't want to login & update  info on _yet another_ site.
+Good products should deliver a ton of value and get the hell out of your way. Whether you're updating your PennApps hack a week later or releasing a new version of a personal project, you don't want to login & update info on _yet another_ site.
 
 ### On to solutions
 
-Unfortunately, we don't have an API yet. I know that's a bummer and while it might deter some folks, I'm a fucking hacker and I remember life before jQuery.
+Unfortunately, we don't have an API yet, I don't know Rails, and the CP dev team won't give me push access to our main repos. So much for an elegant solution. Womp womp.
 
-So, in the spirit of my favorite [Facebook group](https://www.facebook.com/groups/hackathonhackers), I decided to use node.
+But you know what? Fuck that noise. I'm a hacker and I remember life before jQuery. Why not use this as an opportunity to work with node.js?
 
-The solution I came up with is pretty simple: a script that uses [zombie](https://github.com/assaf/zombie), a headless browser testing tool, to automate the process of logging in & editing a project on ChallengePost.
+The solution I came up with is actually pretty simple: I automated the entire login, edit, submit flow using [zombie](https://github.com/assaf/zombie), a headless browser testing tool.
 
-Right now, the only data you can edit is the project tagline & description and you need to login via the email flow, but it works. To update a project on CP, all you need to do is:
+Right now, the only project data you can edit is the tagline & description and you need to login via the email flow, **but it works**. To update a project on ChallengePost, all you need to do is:
 
-```
+```bash
 node CPupdate.js -l user@domain.com -p sUp3rs3cr3t -s myProject -t "my project does cool things!" -d readme.md
 ```
 
