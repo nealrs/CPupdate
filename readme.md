@@ -1,7 +1,3 @@
-## CPupdate.js
-
-_Update your ChallengePost Portfolio with node.js_
-
 ### Uhm wut?
 
 Hi there! My name is Neal Shyam and I'm the Community Manager at ChallengePost. This past weekend, I had the pleasure of attending [Hackcon II](http://hackcon.io) and met a _ton_ of great hackers & hackathon organizers.
@@ -45,7 +41,7 @@ Options:
 
 Although the `tagline` parameter is optional, you must specify a `readme` file or the script will default to readme.md & throw an error if it doesn't exist.
 
-Next, we navigate, via headless browser, to the editing route of our software page (http://challengepost.com/software/foo/edit). This redirects us to a log in flow. Zombie uses the login/pass to authenticate us and returns us to the edit page.
+Next, we navigate, via headless browser, to the editing route of our software page (challengepost.com/software/foo/edit). This redirects us to a log in flow. Zombie uses the login/pass to authenticate us and returns us to the edit page.
 
 Now that the edit form is enabled, we can update the tagline & description parameters and submit the form again. Once this operation returns, the script confirms via the console and also opens a new window so you can confirm the changes with your own eyes.
 
