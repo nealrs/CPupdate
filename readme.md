@@ -14,9 +14,9 @@ Good products should deliver a ton of value and get the hell out of your way. Wh
 
 Unfortunately, we don't have an API yet, I don't know Rails, and the CP dev team won't give me push access to our main repos. So much for an elegant solution. Womp womp.
 
-But you know what? Fuck that noise. I'm a hacker and I remember life before jQuery. Why not use this as an opportunity to work with node.js?
+But you know what? Fuck that noise. I'm a hacker and I remember life before jQuery. Why not use this as an opportunity to learn more about node.js?
 
-The solution I came up with is actually pretty simple: I automated the entire login, edit, submit flow using [zombie](https://github.com/assaf/zombie), a headless browser testing tool.
+The solution I came up with is actually pretty simple: I automated the entire login & edit flow using [zombie](https://github.com/assaf/zombie), a headless browser testing tool.
 
 Right now, the only project data you can edit is the tagline & description and you need to login via the email flow, **but it works**. To update a project on ChallengePost, all you need to do is:
 
