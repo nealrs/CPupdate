@@ -21,7 +21,7 @@ The solution I came up with is actually pretty simple: I automated the entire lo
 Right now, the only project data you can edit is the tagline & description and you need to login via the email flow, **but it works**. To update a project on ChallengePost, all you need to do is:
 
 ```bash
-node CPupdate.js -l user@domain.com -p sUp3rs3cr3t -s myProject -t "my project does cool things!" -d readme.md
+node CPupdate.js -l user@domain.com -p sUp3rs3cr3t -s myProject -t "my project does cool things!" -r readme.md
 ```
 
 ### How it actually works
