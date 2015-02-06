@@ -1,6 +1,6 @@
 {
   "author": "Neal Shyam",
-  "name": "CPupdate",
+  "name": "cpupdate",
   "version": "0.1.1",
   "description": "Update your ChallengePost Portfolio with node.js",
   "homepage": "http://challengepost.com/software/cpupdate",
