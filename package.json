@@ -1,16 +1,21 @@
 {
   "author": "Neal Shyam",
   "name": "CPupdate",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Update your ChallengePost Portfolio with node.js",
+  "homepage": "http://challengepost.com/software/cpupdate",
   "license": "MIT",
+  "bugs":{
+    "url":"https://github.com/nealrs/cpupdate/issues",
+    "email":"neal@challengepost.com"
+  },
   "repository": {
-  "type": "git",
+    "type": "git",
     "url": "git@github.com:nealrs/cpupdate.git"
   },
-  "main": "cpupdate.js",
+  "main": "index.js",
   "bin": {
-    "module-name": "./cpupdate.js"
+    "cpupdate": "./index.js"
   },
   "keywords": [
     "ChallengePost",
@@ -18,11 +23,11 @@
     "portfolio"
   ],
   "dependencies": {
-    "zombie": "2.5.1",
-    "assert": "1.3.0",
-    "open": "0.0.5",
-    "colors": "1.0.3",
-    "nomnom": "1.8.1"
+    "zombie": "assaf/zombie",
+    "assert": "defunctzombie/commonjs-assert",
+    "open": "pwnall/node-open",
+    "colors": "Marak/colors.js",
+    "nomnom": "harthur/nomnom"
   },
   "preferGlobal": "true"
 }
