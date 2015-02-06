@@ -13,10 +13,7 @@
     "type": "git",
     "url": "git@github.com:nealrs/cpupdate.git"
   },
-  "main": "index.js",
-  "bin": {
-    "cpupdate": "./index.js"
-  },
+  "bin": "./index.js",
   "keywords": [
     "ChallengePost",
     "update",

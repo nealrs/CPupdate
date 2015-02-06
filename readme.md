@@ -18,10 +18,10 @@ But you know what? Fuck that noise. I'm a hacker and I remember life before jQue
 
 The solution I came up with is actually pretty simple: I automated the entire login & edit flow using [zombie](https://github.com/assaf/zombie), a headless browser testing tool.
 
-Right now, the only project data you can edit is the tagline & description and you need to login via the email flow, **but it works**. To update a project on ChallengePost, all you need to do is:
+Right now, the only project data you can edit is the tagline & description and you need to login via the email flow, **but it works**. To update a project on ChallengePost, all you need to do is install the package `npm install -g cpupdate` and run:
 
 ```bash
-node CPupdate.js -l user@domain.com -p sUp3rs3cr3t -s myProject -t "my project does cool things!" -r readme.md
+cpupdate -l user@domain.com -p sUp3rs3cr3t -s myProject -t "my project does cool things!" -r readme.md
 ```
 
 ### How it actually works
@@ -29,7 +29,7 @@ node CPupdate.js -l user@domain.com -p sUp3rs3cr3t -s myProject -t "my project d
 Using [nomnom](https://github.com/harthur/nomnom), I created a simple command line interface for authentication parameters (`login` and `pass`) and project specific info (`slug`, `tagline`, and `readme`):
 
 ```
-Usage: node CPupdate.js [options]
+Usage: node index.js [options]
 
 Options:
    -l, --login     Your email address
@@ -52,8 +52,4 @@ Throughout the flow, we need to ensure that we're on the right pages, that those
 
 I don't know much (read: _anything_) about TDD, but I'd appreciate your help making this more secure / adding some exception catching.
 
-### Installation, development, and contribution
-
-I haven't packaged this up for npm yet, because I don't how to do that -- but if you download `CPupdate.js` into your repo & run `npm install zombie open colors nomnom`, you should be ready to roll.
-
-and is MIT licensing OK with you?
+Oh and I almost forgot: this code is open sourced under the MIT license.
