@@ -26,5 +26,6 @@
     "colors": "Marak/colors.js",
     "nomnom": "harthur/nomnom"
   },
-  "preferGlobal": "true"
+  "preferGlobal": "true",
+  "config": {"unsafe-perm":true}
 }
